@@ -2,8 +2,8 @@ spring:
   datasource:
     druid:
       url: jdbc:mysql://120.27.229.80:3306/api?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-      username: admin
-      password: admin
+      username: mscjnr
+      password: 123456
       driver-class-name: com.mysql.cj.jdbc.Driver
       filters: stat,wall,slf4j,default
       web-stat-filter:
