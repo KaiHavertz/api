@@ -18,11 +18,13 @@ public class ResponseResult<T> implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@ApiModelProperty("状态码，200正常")
+	@ApiModelProperty("状态码，20000正常")
 	private Integer code;
 	@ApiModelProperty(" 文本信息 ")
 	private String msg;
 	@ApiModelProperty("返回 的 json 数据")
 	private T data;
+	
+	private String token;
 	
 }

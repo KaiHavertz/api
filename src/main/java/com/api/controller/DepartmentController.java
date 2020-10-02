@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Api("部门接口控制器")
-@RestController
+@RestController 
 @RequestMapping("department")
 public class DepartmentController {
 	@CrossOrigin(origins = "*", maxAge = 3600) // 解决跨域访问的问题
@@ -39,7 +39,7 @@ public class DepartmentController {
 		}
 		rr.setData(departmentList);
 		rr.setMsg("成功");
-		rr.setCode(200);
+		rr.setCode(20000);
 		log.info("来自"+request.getLocalAddr()+"用户的请求");
 		return rr;
 	}
