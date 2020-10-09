@@ -36,7 +36,7 @@ public class ImageController {
 
 		System.out.println(uploadService == null);
 		ResponseResult<Image> rr = new ResponseResult<Image>();
-		Map<String, Object> result = uploadService.uploadImage(file.getContentType(), file.getOriginalFilename(),
+		Map<String, Object> result = uploadService.uploadImage(file.getContentType(), parseImageType(file.getOriginalFilename()),file.getOriginalFilename(),
 				file.getSize(), file.getBytes());
 		System.out.println(result);
 		System.out.println("-----------------------");
